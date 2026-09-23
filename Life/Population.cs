@@ -15,7 +15,11 @@ namespace Life
             get { return size; }
         }
 
-        public int InitialCount { get; private set; }
+        public int InitialCount 
+        { 
+            get; 
+            private set; 
+        }
 
         public Population(int initialCount, int size)
         {
@@ -46,25 +50,9 @@ namespace Life
         public bool this[int row, int column]
         {
             get { return cells[row, column]; }
-            set { cells[row, column] = value; } // необязателен, к примеру если нужно будет убивать клетки
+            set { cells[row, column] = value; }
         }
 
-        //public bool GetCell(int row, int column)
-        //{
-        //    return cells[row, column];
-        //}
-        //public bool SetCell(int row, int column)
-        //{
-        //    return cells[row, column];
-        //}
-
-        //population.GetCell(row, column)
-        //population.SetCell(row, column)
-
-        //population[row, column]
-
-
-        // Правила игры
         // можно вывести число соседей
         public Population CalculateNextState()
         {
