@@ -99,7 +99,7 @@ namespace Life
                     {
                         continue;
                     }
-                    // учитываем границы
+                    
                     int neighborRow = WrapIndex(row + deltaRow);
                     int neighborColumn = WrapIndex(column + deltaColumn);
 
