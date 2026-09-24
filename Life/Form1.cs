@@ -91,7 +91,7 @@ namespace Life
                 DGV2.Columns[i].Width = cellSize;
             }
         }
-            
+
         private void RenderPopulation(Population population, DataGridView grid)
         {
             for (int row = 0; row < population.Size; row++)
@@ -112,6 +112,27 @@ namespace Life
             }
 
             return true;
+        }
+
+        private void DGV1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            // 2. Игнорируем клики по заголовкам и служебной строке
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                return;
+
+            if (e.RowIndex >= currentPopulation.Size || e.ColumnIndex >= currentPopulation.Size)
+                return;
+
+            // 3. Инвертируем клетку
+            bool newValue = !currentPopulation[e.RowIndex, e.ColumnIndex];
+            currentPopulation[e.RowIndex, e.ColumnIndex] = newValue;
+
+            // 4. Перекрашиваем только эту клетку
+            DGV1.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor =
+                newValue ? Color.ForestGreen : Color.White;
+
+            // 5. Снимаем выделение, чтобы клетка не выглядела синей
+            DGV1.ClearSelection();
         }
     }
 }

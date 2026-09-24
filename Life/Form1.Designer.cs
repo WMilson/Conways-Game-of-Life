@@ -55,8 +55,9 @@
             DGV1.RowHeadersVisible = false;
             DGV1.RowHeadersWidth = 51;
             DGV1.ScrollBars = ScrollBars.None;
-            DGV1.Size = new Size(800, 800);
+            DGV1.Size = new Size(683, 717);
             DGV1.TabIndex = 0;
+            DGV1.CellClick += DGV1_CellClick_1;
             // 
             // DGV2
             // 
@@ -64,73 +65,73 @@
             DGV2.AllowUserToResizeRows = false;
             DGV2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGV2.ColumnHeadersVisible = false;
-            DGV2.Location = new Point(1052, 50);
+            DGV2.Location = new Point(855, 50);
             DGV2.Margin = new Padding(5);
             DGV2.Name = "DGV2";
             DGV2.RowHeadersVisible = false;
             DGV2.RowHeadersWidth = 51;
             DGV2.ScrollBars = ScrollBars.None;
-            DGV2.Size = new Size(800, 800);
+            DGV2.Size = new Size(672, 717);
             DGV2.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(36, 855);
+            label1.Location = new Point(36, 803);
             label1.Name = "label1";
-            label1.Size = new Size(246, 32);
+            label1.Size = new Size(193, 25);
             label1.TabIndex = 2;
             label1.Text = "Количество жителей";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(36, 900);
+            label2.Location = new Point(36, 847);
             label2.Name = "label2";
-            label2.Size = new Size(154, 32);
+            label2.Size = new Size(122, 25);
             label2.TabIndex = 3;
             label2.Text = "Размер поля";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(288, 858);
+            textBox1.Location = new Point(288, 803);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 39);
+            textBox1.Size = new Size(125, 32);
             textBox1.TabIndex = 4;
             textBox1.Text = "20";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(288, 900);
+            textBox2.Location = new Point(288, 844);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 39);
+            textBox2.Size = new Size(125, 32);
             textBox2.TabIndex = 5;
             textBox2.Text = "10";
             // 
-            // button1
+            // initializeButton
             // 
-            initializeButton.Location = new Point(456, 862);
-            initializeButton.Name = "button1";
+            initializeButton.Location = new Point(472, 799);
+            initializeButton.Name = "initializeButton";
             initializeButton.Size = new Size(205, 77);
             initializeButton.TabIndex = 6;
             initializeButton.Text = "Заселить";
             initializeButton.UseVisualStyleBackColor = true;
             initializeButton.Click += initializeButton_Click;
             // 
-            // button2
+            // stepButton
             // 
-            stepButton.Location = new Point(456, 945);
-            stepButton.Name = "button2";
+            stepButton.Location = new Point(683, 799);
+            stepButton.Name = "stepButton";
             stepButton.Size = new Size(205, 77);
             stepButton.TabIndex = 7;
             stepButton.Text = "Шаг";
             stepButton.UseVisualStyleBackColor = true;
             stepButton.Click += stepButton_Click;
             // 
-            // button3
+            // toggleTimerButton
             // 
-            toggleTimerButton.Location = new Point(692, 945);
-            toggleTimerButton.Name = "button3";
+            toggleTimerButton.Location = new Point(894, 799);
+            toggleTimerButton.Name = "toggleTimerButton";
             toggleTimerButton.Size = new Size(205, 77);
             toggleTimerButton.TabIndex = 8;
             toggleTimerButton.Text = "Жизнь";
@@ -143,9 +144,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1995, 1097);
+            ClientSize = new Size(1621, 895);
             Controls.Add(toggleTimerButton);
             Controls.Add(stepButton);
             Controls.Add(initializeButton);
