@@ -75,4 +75,4 @@
 
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/username/life.git](https://github.com/WMilson/Conways-Game-of-Life.git
+   git clone https://github.com/WMilson/Conways-Game-of-Life.git
